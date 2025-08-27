@@ -1,18 +1,25 @@
-package dto;
+package com.sch.springboot.dto;
 
 public class Member {
     //Field
     private String name;
     private int age;
     private String address;
+    private String subject;
 
     //Constructor
     public Member() {}
 
     //Method : setter, getter
-//    public void setName(String name) {this.name = name;}
-//    public String getName() {return name;}
 
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
 
     public String getName() {
         return name;
@@ -37,5 +44,11 @@ public class Member {
     public void setAddress(String address) {
         this.address = address;
     }
-
 }
+
+
+
+
+
+
+
